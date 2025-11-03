@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barista's Coffee Beans</title>
+  <meta name="author" content="Gloria Alexia Radu">
+  <meta name="description" content="Barista's Coffee Shop - Coffee Beans">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* Full height flex layout for sticky footer */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #685044;
+      color: #ECE7E7;
+    }
+
+    main {
+      flex: 1; /* Makes main content take available space */
+    }
+
+    /* Navbar links */
+    .navbar-nav .nav-link {
+      color: #ECE7E7 !important;
+    }
+
+    /* Bean cards */
+    .bean-card {
+      background-color: #034c3c;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+      height: 100%;
+    }
+
+    .bean-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .bean-card:hover {
+      transform: scale(1.03);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #034c3c;
+      color: #ECE7E7;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 15px 15px 0 0;
+      margin-top: 40px;
+    }
+
+    .nav-link.active { 
+    color: #034c3c !important; font-weight: bold; 
+  }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark w-100">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Logo" style="max-width: 40px; margin-right: 10px;">
+        <span class="fw-bold" href="index.html">Barista's</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MycollapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="MycollapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item px-3"><a class="nav-link my-text-color" href="menu.html">Menu</a></li>
+          <li class="nav-item px-3"><a class="nav-link active" href="beans.html">Coffee Beans</a></li>
+          <li class="nav-item px-3"><a class="nav-link my-text-color" href="index.html#team">Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container my-5">
+    <h2 class="text-center mb-5">Our Coffee Beans</h2>
+    <div class="row g-4">
+      <!-- Bean 1 -->
+      <div class="col-12 col-md-4">
+        <div class="bean-card">
+          <img src="light.jpg" alt="Light Roast">
+          <h5>Light Roast</h5>
+          <p><strong>Origin:</strong> Ethiopia</p>
+          <p><strong>Traits:</strong> Floral aroma, citrus notes</p>
+        </div>
+      </div>
+
+      <!-- Bean 2 -->
+      <div class="col-12 col-md-4">
+        <div class="bean-card">
+          <img src="dark.jpg" alt="Dark Roast">
+          <h5>Dark Roast</h5>
+          <p><strong>Origin:</strong> Colombia</p>
+          <p><strong>Traits:</strong> Herbal, deep flavour</p>
+        </div>
+      </div>
+
+      <!-- Bean 3 -->
+      <div class="col-12 col-md-4">
+        <div class="bean-card">
+          <img src="walnut.jpg" alt="Walnut Blend">
+          <h5>NEW! Walnut Blend </h5>
+          <p><strong>Origin:</strong> Kenya</p>
+          <p><strong>Traits:</strong> Nutty, festive taste profile</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Barista's Coffee Shop — Crafted with love ☕</p>
+    <p>123 Bean Street, Lincoln | (555) 123-4567 | hello@baristascoffee.com</p>
+    <div>
+      <a href="https://www.tiktok.com/en"><img src="tiktok.png" alt="TikTok" width="24"></a>
+      <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook" width="24"></a>
+      <a href="https://www.instagram.com"><img src="insta.png" alt="Instagram" width="24"></a>
+    </div>
+  </footer>
+</body>
+</html>
